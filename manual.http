@@ -1,0 +1,46 @@
+### Register
+POST http://localhost:8080/api/v1/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username" : "sukri",
+  "password": "matamu",
+  "name" : "Muhammad Sukriyatma"
+}
+
+
+
+
+### Login
+POST http://localhost:8080/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username" : "user",
+  "password": "password"
+}
+
+
+
+
+
+
+### Get Current
+GET http://localhost:8080/api/v1/users/current
+Accept: application/json
+X-Csrf-Token: de9ce643-996c-4140-bd5b-508f7e68e181
+
+
+### Update User
+PATCH http://localhost:8080/api/v1/users/current
+Accept: application/json
+Content-Type: application/json
+X-Csrf-Token: b51f3b88-01c7-44c3-ba55-1aecac8976f6
+
+{
+  "password": "secrets"
+}
+
+
