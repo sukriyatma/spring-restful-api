@@ -1,4 +1,4 @@
-# Spring Boot 3.2 Learning Project with Spring Security 6 and JWT Authentication
+# Spring Boot with Spring Security and JWT Authentication
 
 This repository serves as a learning project for those interested in exploring Spring Boot 3.2 along with the latest Spring Security version (6) and JWT (JSON Web Token) authentication. The project is designed to provide a hands-on experience for developers seeking to understand the fundamentals of Spring Boot and secure web application development.
 
@@ -38,7 +38,8 @@ curl --location 'localhost:8080/api/v1/auth/register' \
     "username" : "sukri",
     "password" : "rahasia",
     "name"     : "Muhammad Sukriyatma"
-}'```
+}
+```
 
 ```bash
 curl --location 'localhost:8080/api/v1/auth/login' \
@@ -46,5 +47,5 @@ curl --location 'localhost:8080/api/v1/auth/login' \
 --data '{
     "username" : "sukriyatma",
     "password" : "matamu"
-}'
+}
 ```
